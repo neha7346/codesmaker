@@ -1,0 +1,7 @@
+url=https://facebook.com/
+browser= chrome
+systemproperty_1= webdriver.chrome.driver
+systemproperty_2= \\u200E\\u2068High Sierra\\u2069 \\u25B8\\u2068Users\\u2069 \\u25B8\ \u2068mac\\u2069 \\u25B8\ \u2068Desktop\\u2069
+username= admin
+password= admin
+username= admin2

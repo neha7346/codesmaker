@@ -1,0 +1,372 @@
+!SESSION 2019-09-13 18:43:08.043 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/mac/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/mac/.eclipse_keyring
+
+!ENTRY org.eclipse.egit.core 1 0 2019-09-13 18:43:39.766
+!MESSAGE Using Apache MINA sshd as ssh client.
+!SESSION 2019-10-11 09:44:34.078 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/mac/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/mac/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-10-11 09:45:11.916
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-11 09:45:11.956
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.ui 4 4 2019-10-11 09:46:11.828
+!MESSAGE Unable to create part
+!SUBENTRY 1 org.eclipse.jdt.ui 4 996 2019-10-11 09:46:11.828
+!MESSAGE The Class File Viewer cannot handle the given input ('org.eclipse.ui.ide.FileStoreEditorInput').
+!STACK 1
+org.eclipse.core.runtime.CoreException: The Class File Viewer cannot handle the given input ('org.eclipse.ui.ide.FileStoreEditorInput').
+	at org.eclipse.jdt.internal.ui.javaeditor.ClassFileEditor.doSetInput(ClassFileEditor.java:685)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.lambda$1(AbstractTextEditor.java:3154)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:438)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:354)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:2364)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2362)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3171)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3196)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:354)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:340)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:333)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:107)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:146)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4975)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:652)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:616)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:791)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:404)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1240)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3209)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$9(WorkbenchPage.java:3114)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3112)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3083)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3066)
+	at org.eclipse.ui.ide.IDE.openEditorOnFileStore(IDE.java:1382)
+	at org.eclipse.ui.internal.ide.actions.OpenLocalFileAction.run(OpenLocalFileAction.java:100)
+	at org.eclipse.ui.internal.ide.actions.OpenLocalFileAction.run(OpenLocalFileAction.java:73)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:232)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:412)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4364)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1512)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1535)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1324)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4151)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:635)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+!SUBENTRY 2 org.eclipse.jdt.ui 4 996 2019-10-11 09:46:11.829
+!MESSAGE The Class File Viewer cannot handle the given input ('org.eclipse.ui.ide.FileStoreEditorInput').
+!SESSION 2019-10-11 11:27:41.743 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/mac/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/mac/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-10-11 11:28:33.206
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-11 11:28:33.246
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.testng.eclipse 1 0 2019-10-11 11:31:57.676
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/mac/Desktop/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/954/0/.cp/lib/testng-remote.jar /Users/mac/Desktop/java programs/seleniumprogram/selenium/com.btes.marketing/target/test-classes /Users/mac/Desktop/java programs/seleniumprogram/selenium/com.btes.marketing/target/classes /Users/mac/.p2/pool/plugins/org.testng_7.0.0.r201908191551.jar /Users/mac/.p2/pool/plugins/com.beust.jcommander_1.72.0.jar /Users/mac/.p2/pool/plugins/org.apache-extras.beanshell.bsh_2.0.0.b6.jar /Users/mac/.p2/pool/plugins/org.yaml.snakeyaml_1.21.0.jar /Users/mac/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50333 -protocol json -d /Users/mac/Desktop/java programs/seleniumprogram/selenium/com.btes.marketing/test-output /var/folders/p9/k2jjwb_d1cn1mpdlb_4vdzv00000gp/T/testng-eclipse--2094113720/testng-customsuite.xml
+java -ea -classpath /Users/mac/Desktop/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/954/0/.cp/lib/testng-remote.jar:/Users/mac/Desktop/java programs/seleniumprogram/selenium/com.btes.marketing/target/test-classes:/Users/mac/Desktop/java programs/seleniumprogram/selenium/com.btes.marketing/target/classes:/Users/mac/.p2/pool/plugins/org.testng_7.0.0.r201908191551.jar:/Users/mac/.p2/pool/plugins/com.beust.jcommander_1.72.0.jar:/Users/mac/.p2/pool/plugins/org.apache-extras.beanshell.bsh_2.0.0.b6.jar:/Users/mac/.p2/pool/plugins/org.yaml.snakeyaml_1.21.0.jar:/Users/mac/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar org.testng.remote.RemoteTestNG -serport 50333 -protocol json -d /Users/mac/Desktop/java programs/seleniumprogram/selenium/com.btes.marketing/test-output /var/folders/p9/k2jjwb_d1cn1mpdlb_4vdzv00000gp/T/testng-eclipse--2094113720/testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-10-11 11:34:11.232
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /Users/mac/Desktop/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/954/0/.cp/lib/testng-remote.jar /Users/mac/Desktop/java programs/seleniumprogram/selenium/com.btes.marketing/target/test-classes /Users/mac/Desktop/java programs/seleniumprogram/selenium/com.btes.marketing/target/classes /Users/mac/.p2/pool/plugins/org.testng_7.0.0.r201908191551.jar /Users/mac/.p2/pool/plugins/com.beust.jcommander_1.72.0.jar /Users/mac/.p2/pool/plugins/org.apache-extras.beanshell.bsh_2.0.0.b6.jar /Users/mac/.p2/pool/plugins/org.yaml.snakeyaml_1.21.0.jar /Users/mac/.m2/repository/org/testng/testng/7.0.0/testng-7.0.0.jar /Users/mac/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar /Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-java/4.0.0-alpha-3/selenium-java-4.0.0-alpha-3.jar /Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-api/4.0.0-alpha-3/selenium-api-4.0.0-alpha-3.jar /Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.0.0-alpha-3/selenium-chrome-driver-4.0.0-alpha-3.jar /Users/mac/.m2/repository/com/google/guava/guava/27.1-jre/guava-27.1-jre.jar /Users/mac/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar /Users/mac/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar /Users/mac/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar /Users/mac/.m2/repository/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar /Users/mac/.m2/repository/com/google/errorprone/error_prone_annotations/2.2.0/error_prone_annotations-2.2.0.jar /Users/mac/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar /Users/mac/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.jar /Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.0.0-alpha-3/selenium-chromium-driver-4.0.0-alpha-3.jar /Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-devtools/4.0.0-alpha-3/selenium-devtools-4.0.0-alpha-3.jar /Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-http/4.0.0-alpha-3/selenium-http-4.0.0-alpha-3.jar /Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-json/4.0.0-alpha-3/selenium-json-4.0.0-alpha-3.jar /Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.0.0-alpha-3/selenium-edge-driver-4.0.0-alpha-3.jar /Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-edgehtml-driver/4.0.0-alpha-3/selenium-edgehtml-driver-4.0.0-alpha-3.jar /Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.0.0-alpha-3/selenium-firefox-driver-4.0.0-alpha-3.jar /Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-firefox-xpi-driver/4.0.0-alpha-3/selenium-firefox-xpi-driver-4.0.0-alpha-3.jar /Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.0.0-alpha-3/selenium-ie-driver-4.0.0-alpha-3.jar /Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/4.0.0-alpha-3/selenium-opera-driver-4.0.0-alpha-3.jar /Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.0.0-alpha-3/selenium-remote-driver-4.0.0-alpha-3.jar /Users/mac/.m2/repository/com/squareup/okhttp3/okhttp/4.0.1/okhttp-4.0.1.jar /Users/mac/.m2/repository/com/squareup/okio/okio/2.2.2/okio-2.2.2.jar /Users/mac/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.3.40/kotlin-stdlib-1.3.40.jar /Users/mac/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.3.40/kotlin-stdlib-common-1.3.40.jar /Users/mac/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar /Users/mac/.m2/repository/io/opentracing/opentracing-api/0.33.0/opentracing-api-0.33.0.jar /Users/mac/.m2/repository/net/bytebuddy/byte-buddy/1.9.12/byte-buddy-1.9.12.jar /Users/mac/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar /Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.0.0-alpha-3/selenium-safari-driver-4.0.0-alpha-3.jar /Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-support/4.0.0-alpha-3/selenium-support-4.0.0-alpha-3.jar /Users/mac/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50360 -protocol json -d /Users/mac/Desktop/java programs/seleniumprogram/selenium/com.btes.marketing/test-output /var/folders/p9/k2jjwb_d1cn1mpdlb_4vdzv00000gp/T/testng-eclipse-1610849622/testng-customsuite.xml
+java -ea -classpath /Users/mac/Desktop/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/954/0/.cp/lib/testng-remote.jar:/Users/mac/Desktop/java programs/seleniumprogram/selenium/com.btes.marketing/target/test-classes:/Users/mac/Desktop/java programs/seleniumprogram/selenium/com.btes.marketing/target/classes:/Users/mac/.p2/pool/plugins/org.testng_7.0.0.r201908191551.jar:/Users/mac/.p2/pool/plugins/com.beust.jcommander_1.72.0.jar:/Users/mac/.p2/pool/plugins/org.apache-extras.beanshell.bsh_2.0.0.b6.jar:/Users/mac/.p2/pool/plugins/org.yaml.snakeyaml_1.21.0.jar:/Users/mac/.m2/repository/org/testng/testng/7.0.0/testng-7.0.0.jar:/Users/mac/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-java/4.0.0-alpha-3/selenium-java-4.0.0-alpha-3.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-api/4.0.0-alpha-3/selenium-api-4.0.0-alpha-3.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.0.0-alpha-3/selenium-chrome-driver-4.0.0-alpha-3.jar:/Users/mac/.m2/repository/com/google/guava/guava/27.1-jre/guava-27.1-jre.jar:/Users/mac/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/mac/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/mac/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/mac/.m2/repository/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar:/Users/mac/.m2/repository/com/google/errorprone/error_prone_annotations/2.2.0/error_prone_annotations-2.2.0.jar:/Users/mac/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/mac/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.0.0-alpha-3/selenium-chromium-driver-4.0.0-alpha-3.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-devtools/4.0.0-alpha-3/selenium-devtools-4.0.0-alpha-3.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-http/4.0.0-alpha-3/selenium-http-4.0.0-alpha-3.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-json/4.0.0-alpha-3/selenium-json-4.0.0-alpha-3.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.0.0-alpha-3/selenium-edge-driver-4.0.0-alpha-3.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-edgehtml-driver/4.0.0-alpha-3/selenium-edgehtml-driver-4.0.0-alpha-3.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.0.0-alpha-3/selenium-firefox-driver-4.0.0-alpha-3.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-firefox-xpi-driver/4.0.0-alpha-3/selenium-firefox-xpi-driver-4.0.0-alpha-3.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.0.0-alpha-3/selenium-ie-driver-4.0.0-alpha-3.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/4.0.0-alpha-3/selenium-opera-driver-4.0.0-alpha-3.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.0.0-alpha-3/selenium-remote-driver-4.0.0-alpha-3.jar:/Users/mac/.m2/repository/com/squareup/okhttp3/okhttp/4.0.1/okhttp-4.0.1.jar:/Users/mac/.m2/repository/com/squareup/okio/okio/2.2.2/okio-2.2.2.jar:/Users/mac/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.3.40/kotlin-stdlib-1.3.40.jar:/Users/mac/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.3.40/kotlin-stdlib-common-1.3.40.jar:/Users/mac/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/mac/.m2/repository/io/opentracing/opentracing-api/0.33.0/opentracing-api-0.33.0.jar:/Users/mac/.m2/repository/net/bytebuddy/byte-buddy/1.9.12/byte-buddy-1.9.12.jar:/Users/mac/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.0.0-alpha-3/selenium-safari-driver-4.0.0-alpha-3.jar:/Users/mac/.m2/repository/org/seleniumhq/selenium/selenium-support/4.0.0-alpha-3/selenium-support-4.0.0-alpha-3.jar:/Users/mac/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar org.testng.remote.RemoteTestNG -serport 50360 -protocol json -d /Users/mac/Desktop/java programs/seleniumprogram/selenium/com.btes.marketing/test-output /var/folders/p9/k2jjwb_d1cn1mpdlb_4vdzv00000gp/T/testng-eclipse-1610849622/testng-customsuite.xml
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-10-11 11:36:02.169
+!MESSAGE Connection to http:/p2.index failed on URI does not specify a valid host name: http:/p2.index. Retry attempt 0 started
+!STACK 0
+org.apache.http.client.ClientProtocolException: URI does not specify a valid host name: http:/p2.index
+	at org.apache.http.impl.client.CloseableHttpClient.determineTarget(CloseableHttpClient.java:95)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2019-10-11 11:36:02.381
+!MESSAGE Unable to read repository at http:/content.xml.
+!STACK 0
+org.apache.http.client.ClientProtocolException: URI does not specify a valid host name: http:/content.xml
+	at org.apache.http.impl.client.CloseableHttpClient.determineTarget(CloseableHttpClient.java:95)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2019-10-18 19:24:19.491 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/mac/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/mac/.eclipse_keyring
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-18 19:24:31.788
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-10-18 20:16:27.705
+!MESSAGE Unknown Host: http://download.eclipse.org/releases/2019-06/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-10-18 20:16:27.720
+!MESSAGE Unknown Host: http://www.beust.com/eclipse/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: www.beust.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-10-18 20:16:27.724
+!MESSAGE Unknown Host: http://download.eclipse.org/usssdk/updates/release/latest/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-10-18 20:16:27.827
+!MESSAGE Connection to http:/p2.index failed on URI does not specify a valid host name: http:/p2.index. Retry attempt 0 started
+!STACK 0
+org.apache.http.client.ClientProtocolException: URI does not specify a valid host name: http:/p2.index
+	at org.apache.http.impl.client.CloseableHttpClient.determineTarget(CloseableHttpClient.java:95)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2019-10-18 20:16:28.037
+!MESSAGE Unable to read repository at http:/content.xml.
+!STACK 0
+org.apache.http.client.ClientProtocolException: URI does not specify a valid host name: http:/content.xml
+	at org.apache.http.impl.client.CloseableHttpClient.determineTarget(CloseableHttpClient.java:95)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-10-18 20:16:28.051
+!MESSAGE Unknown Host: http://dl.bintray.com/testng-team/testng-p2-release/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: dl.bintray.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-10-18 20:16:28.056
+!MESSAGE Unknown Host: http://download.eclipse.org/eclipse/updates/4.12/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-10-18 20:16:28.063
+!MESSAGE Unknown Host: http://beust.com/eclipse/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: beust.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-10-18 20:16:28.067
+!MESSAGE Unknown Host: http://download.eclipse.org/oomph/updates/milestone/latest/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2019-10-18 22:24:44.663 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/mac/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/mac/.eclipse_keyring
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-18 22:24:53.997
+!MESSAGE Using Apache MINA sshd as ssh client.
